@@ -1,9 +1,9 @@
 import pytesseract as tess
 import pyautogui
 from PIL import Image
-
-tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 import time
+tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 
 # This is a sample Python script.
 
@@ -17,8 +17,10 @@ primary_weapons_list = [["stinger", "spectre"],
                         ["ares", "odin"],
                         ["bucky", "judge"]]
 
+holding = ""
 
 def stuffs():
+    global holding
     myScreenshot = pyautogui.screenshot()
     myScreenshot.save(r'C:\Users\sethy\PycharmProjects\mousekickback\valorant.png')
     img = Image.open('valorant.png')
@@ -29,9 +31,11 @@ def stuffs():
     bottom = 925
     primary_weapon = img.crop((left, top, right, bottom))
     data = [tess.image_to_string(primary_weapon, lang='eng', config='--psm 6')]
-    print(data[0])
-
-
+    for i in range(len(primary_weapons_list)):
+        for j in range(len(primary_weapons_list[i])):
+            if data[0].strip().lower() == data[i][j]:
+                print(data[i][j])
+                holding = data[i][j]
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
 while True:
