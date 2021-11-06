@@ -33,7 +33,7 @@ def stuffs():
     data = [tess.image_to_string(primary_weapon, lang='eng', config='--psm 6')]
     for i in range(len(primary_weapons_list)):
         for j in range(len(primary_weapons_list[i])):
-            if data[0].strip().lower() == data[i][j]:
+            if data[i][j] in data[0].strip().lower():
                 print(data[i][j])
                 holding = data[i][j]
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
