@@ -1,13 +1,10 @@
 from pynput.mouse import Listener
 import logging
-from main import writing
-
 
 def readin(x, y):
-    if not writing:
-        file1 = open("weapon.txt", "r")
-        print(file1.readlines())
-        file1.close()
+    file1 = open("weapon.txt", "r")
+    print(file1.read())
+    file1.close()
 
 
 def firing(x, y, button, pressed):
