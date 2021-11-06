@@ -1,26 +1,18 @@
 import pytesseract as tess
 import pyautogui
-from PIL import Image
+from PIL import Image, ImageFile
 import time
+
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+
 tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# Page segmentation modes:
-#   0    Orientation and script detection (OSD) only.
-#   1    Automatic page segmentation with OSD.
-#   2    Automatic page segmentation, but no OSD, or OCR.
-#   3    Fully automatic page segmentation, but no OSD. (Default)
-#   4    Assume a single column of text of variable sizes.
-#   5    Assume a single uniform block of vertically aligned text.
-#   6    Assume a single uniform block of text.
-#   7    Treat the image as a single text line.
-#   8    Treat the image as a single word.
-#   9    Treat the image as a single word in a circle.
-#  10    Treat the image as a single character.
-#  10    Treat the image as a single character.
-#  11    Sparse text. Find as much text as possible in no particular order.
-#  12    Sparse text with OSD.
-#  13    Raw line. Treat the image as a single text line,
-#                         bypassing hacks that are Tesseract-specific.
+
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
 # list of primary weapons smg,rifles, machine guns,
 primary_weapons_list = [["stinger", "spectre"],
                         ["bulldog", "guardian", "phantom", "vandal"],
@@ -29,11 +21,14 @@ primary_weapons_list = [["stinger", "spectre"],
                         ["bucky", "judge"]]
 
 holding = ""
+writing = False
+
 
 def stuffs():
     global holding
+    global writing
     myScreenshot = pyautogui.screenshot()
-    myScreenshot.save(r'C:\Users\sethy\PycharmProjects\mousekickback\valorant.png')
+    myScreenshot.save(r'valorant.png')
     img = Image.open('valorant.png')
     width, height = img.size
     left = 1700
@@ -45,10 +40,19 @@ def stuffs():
     for i in range(len(primary_weapons_list)):
         for j in range(len(primary_weapons_list[i])):
             if primary_weapons_list[i][j] in data[0].strip().lower():
-                print(primary_weapons_list[i][j])
+                #print(primary_weapons_list[i][j])
                 holding = primary_weapons_list[i][j]
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+                writing = True
+                file1 = open("weapon.txt", "w+")  # write mode
+                file1.write(holding)
+                file1.close()
+                writing = False
+
 
 while True:
-    stuffs()
-    time.sleep(.01)
+    try:
+        stuffs()
+    except:
+        print("yikes")
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
