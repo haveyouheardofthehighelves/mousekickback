@@ -21,6 +21,9 @@ primary_weapons_list = [["stinger", "spectre"],
                         ["bucky", "judge"]]
 
 holding = ""
+file1 = open("weapon.txt", "w+")  # write mode
+file1.write("")
+file1.close()
 writing = False
 
 
