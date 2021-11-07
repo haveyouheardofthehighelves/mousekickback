@@ -1,0 +1,370 @@
+2021-11-06 17:00:51,068: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 26, in readin
+    str((1/float(str(index).strip())) * 2.7)
+UnboundLocalError: local variable 'index' referenced before assignment
+2021-11-06 17:01:41,878: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 22, in readin
+    index = file1.readline()[1]
+IndexError: string index out of range
+2021-11-06 17:01:57,091: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 22, in readin
+    index = file1.readline()[1]
+IndexError: string index out of range
+2021-11-06 17:02:01,739: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 22, in readin
+    index = file1.readline()[1]
+IndexError: string index out of range
+2021-11-06 17:03:08,345: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 23, in readin
+    str((1 / float(str(index).strip())) * 2.7)
+ValueError: could not convert string to float: 's'
+2021-11-06 17:09:37,387: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 22, in readin
+    index = x[1]
+IndexError: list index out of range
+2021-11-06 17:18:56,136: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 24, in readin
+    ser.write(b'w')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 17:45:36,727: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 40, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 17:50:55,745: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 40, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 17:52:21,034: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 40, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 17:54:24,665: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 23, in readin
+    if str(x[0]).strip() != "":
+IndexError: string index out of range
+2021-11-06 18:11:53,764: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 40, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 18:22:01,915: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 53, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 18:22:33,947: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 53, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 18:38:43,586: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 34, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 18:42:27,869: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 34, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
