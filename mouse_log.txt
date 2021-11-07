@@ -368,3 +368,99 @@ Traceback (most recent call last):
   File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
     raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
 serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2021-11-06 19:10:31,535: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 26, in readin
+    ser.write(b's')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'Access is denied.', None, 5))
+2021-11-06 19:13:43,894: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 26, in readin
+    ser.write(b's')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'Access is denied.', None, 5))
+2021-11-06 19:22:27,754: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 25, in readin
+    ser.write(b'p')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'Access is denied.', None, 5))
+2021-11-06 19:28:36,959: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "C:\Users\sethy\PycharmProjects\CopyMouseRecoil\mousekickback\mousebehavior.py", line 51, in firing
+    ser.write(b'e')
+  File "C:\Users\sethy\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'Access is denied.', None, 5))

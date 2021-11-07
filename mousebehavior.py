@@ -5,9 +5,9 @@ import serial
 logging.basicConfig(filename="mouse_log.txt", level=logging.DEBUG, format='%(asctime)s: %(message)s')
 
 holding = False
-ser = serial.Serial("COM6", 9600, timeout=0)
+ser = serial.Serial("COM7", 9600, timeout=0)
 ser.xonxoff = 1
-
+save = ""
 def on_move(x, y):
     file1 = open("weapon.txt", "r")  # write mode
     print(file1.read())
@@ -16,8 +16,28 @@ def on_move(x, y):
 def readin(x, y):
     global holding
     file1 = open("weapon.txt", "r")
-    if str(file1.readline()).strip() != "":
+    a = str(file1.read()).strip()
+
+    if a != "":
+        if a == "vandal":
+            ser.write(b'v')
+        elif a == "phantom":
+            ser.write(b'p')
+        elif a == "spectre":
+            ser.write(b's')
+        elif a == "bulldog":
+            ser.write(b'u')
+        elif a == "ares":
+            ser.write(b'a')
+        elif a == "odin":
+            ser.write(b'o')
+        elif a == "stinger":
+            ser.write(b'i')
+
+
+
         holding = True
+
     else:
         holding = False
     file1.close()
