@@ -5,7 +5,7 @@ import serial
 logging.basicConfig(filename="mouse_log.txt", level=logging.DEBUG, format='%(asctime)s: %(message)s')
 
 holding = False
-ser = serial.Serial("COM9", 9600, timeout=0)
+ser = serial.Serial("COM7", 9600, timeout=0)
 ser.xonxoff = 1
 save = ""
 pressing = False
@@ -30,17 +30,32 @@ def readin(x, y):
             ser.write(b'3')
             ser.write(b'6')
         elif a == "phantom":
-            ser.write(b'1')
-            ser.write(b'9')
+            ser.write(b'2')
+            ser.write(b'5')
         elif a == "spectre":
+            ser.write(b'2')
+            ser.write(b'0')
+        elif a == "stinger":
             ser.write(b'1')
             ser.write(b'5')
+        elif a == "ares":
+            ser.write(b'3')
+            ser.write(b'0')
+        elif a == "odin":
+            ser.write(b'2')
+            ser.write(b'5')
+        elif a == "bulldog":
+            ser.write(b'4')
+            ser.write(b'5')
+        elif a == "bucky" or "judge" or "operator" or "marshall" or "guardian":
+            ser.write(b't')
         ser.write(b'w')
         save = a
+
     file1.close()
 def firing(x, y, button, pressed):
     global holding
-    global  pressing
+    global pressing
     if holding:
         if str(button) == "Button.left":
             if pressed:
