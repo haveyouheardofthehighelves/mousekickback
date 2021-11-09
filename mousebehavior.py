@@ -40,7 +40,7 @@ def readin(x, y):
             ser.write(b'5')
         elif a == "ares":
             ser.write(b'3')
-            ser.write(b'0')
+            ser.write(b'5')
         elif a == "odin":
             ser.write(b'2')
             ser.write(b'5')
