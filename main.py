@@ -7,12 +7,6 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 # list of primary weapons smg,rifles, machine guns,
 primary_weapons_list = [["stinger", "spectre"],
                         ["bulldog", "guardian", "phantom", "vandal"],
